@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 //import android.widget.TextView
-import android.widget.Toast
 
 /**
  * This activity allows the user to roll a dice and view the result
@@ -19,8 +18,6 @@ class MainActivity : AppCompatActivity() {
         rollDice()
         rollButton.setOnClickListener {
             rollDice()
-            val toast = Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT)
-            toast.show()
         }
     }
 
